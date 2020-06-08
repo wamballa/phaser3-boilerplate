@@ -1,0 +1,36 @@
+{
+  "name": "capcaitor-phaser",
+  "version": "0.1.2",
+  "description": "Skeleton Phaser app build around Ionic Capacitor which allows deployment to Android, iOS and Desktop (via Electron)",
+  "author": {
+    "name": "Guy Nesher",
+    "email": "nesher.guy@gmail.com"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "build-android": "webpack --mode production --env.android && npx cap copy android && npx cap open android",
+    "build-ios": "webpack --mode production --env.ios && npx cap copy ios && npx cap open ios",
+    "build-electron": "webpack --mode production --env.electron && npx cap copy electron"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^1.0.0-beta.24",
+    "@capacitor/cli": "^1.0.0-beta.24",
+    "@capacitor/core": "^1.0.0-beta.24",
+    "phaser": "3.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^2.1.1",
+    "expose-loader": "0.7.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
