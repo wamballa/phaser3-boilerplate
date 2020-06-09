@@ -1,4 +1,5 @@
 # Phaser-Capacitor boilerplate
+This is a test
 This skeleton app allows you to easily develop a Phaser 3 game for iOS / Android / Desktop using the Ionic Capacitor library. It uses Typescript (though can also be written in JS) and Webpack
 
 * Ionic Capacitor is still in Beta and there are some bugs / quirks that are still being ironed out. Head to https://github.com/ionic-team/capacitor to find more about it's current progress.
